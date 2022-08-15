@@ -1,0 +1,21 @@
+<html>
+<script>
+    numeroPrimo(995)
+
+    function numeroPrimo(numero) {
+        let numeroPrimo = true
+        for (let contador = 2; contador < numero; contador++) {
+            if (numero % contador === 0) {
+                numeroPrimo = false;
+                break
+            }
+        }
+        if (numeroPrimo == true && numero !== 1) {
+            console.log(`O valor ${numero} é primo`)
+        } else {
+            console.log(`O valor ${numero} não é primo`)
+        }
+    }
+</script>
+
+</html>
